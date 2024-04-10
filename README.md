@@ -35,6 +35,3 @@
 
 
 [도메인 주도 설계](https://product.kyobobook.co.kr/detail/S000001514402)
-
-
-A cute sea otter  in a space suit flying through the solar system towards a colorful planet, low poly style, beautiful colors
