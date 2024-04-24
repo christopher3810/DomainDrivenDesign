@@ -30,9 +30,9 @@ Most information systems are dominated by maintenance, which primarily involves 
 
 Server - Client
 
-the two-tier architecture has many s<font color="#00ffcc">hortcomings due to the tight coupling of the user interface to the physical data layout</font>
+the two-tier architecture has many `shortcomings due to the tight coupling of the user interface to the physical data layout`
 
-2 Tier 아키텍처는 <font color="#00ffcc">사용자 인터페이스와 물리적 데이터 레이아웃 간의 긴밀한 결합으로 인해 많은 단점</font>이 존재함.
+2 Tier 아키텍처는 `사용자 인터페이스와 물리적 데이터 레이아웃 간의 긴밀한 결합으로 인해 많은 단점`이 존재함.
 
 #### 3 Tier
 ---
