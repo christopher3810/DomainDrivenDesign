@@ -6,7 +6,7 @@
 Information system (IS) development involves more than an understanding of a domain, however. 
 A world of many users, databases, and legacy systems must be accommodated.
 
-인포메이션 시스템(IS) 개발에는 도메인에 대한 이해 이상의 것이 필요. \ 
+인포메이션 시스템(IS) 개발에는 도메인에 대한 이해 이상의 것이 필요. \
 많은 사용자, 데이터베이스, 레거시 시스템을 수용해야 하는 세계가 존재.
 
 This chapter discusses architectural patterns for information systems. \ 
