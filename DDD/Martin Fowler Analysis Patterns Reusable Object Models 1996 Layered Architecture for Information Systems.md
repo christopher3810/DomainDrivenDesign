@@ -3,6 +3,7 @@
 > 그 당시에는 Architecture Layer 하는게 어떤 장점이 있다고 봤을까 ? 
 > [Martin Fowler Analysis Patterns Reusable Object 1996](https://uml2.narod.ru/files/docs/13/AnalysisPatterns.pdf)
 
+```html
 Information system (IS) development involves more than an understanding of a domain. \
 however, A world of many users, databases, and legacy systems must be accommodated.
 
@@ -20,6 +21,7 @@ An information system architectural pattern divides the system into layers (or t
 Most information systems are dominated by maintenance, which primarily involves coping with changing information demands.
 
 대부분의 정보 시스템은 유지 보수가 지배적이며, 이는 주로 변화하는 정보 요구에 대처하는 것. 
+```
 
 >[!Note] 
 >(α)
