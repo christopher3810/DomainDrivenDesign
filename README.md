@@ -7,9 +7,7 @@
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/christopher3810/DomainDrivenDesign?style=for-the-badge) ![GitHub last commit](https://img.shields.io/github/last-commit/christopher3810/DomainDrivenDesign?style=for-the-badge)
 
-> Eric Evans 의 도메인 주도 설계 스터디.
-
-
+> DDD Deep Dive
 
 ### ✨ 표기법
 ---
@@ -32,6 +30,3 @@
 >추가 정보 명(α) .\
 >추가 정보 내용
 
-
-
-[도메인 주도 설계](https://product.kyobobook.co.kr/detail/S000001514402)
