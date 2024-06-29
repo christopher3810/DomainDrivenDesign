@@ -4,7 +4,7 @@
     <h1>Eric Evans - Domain Driven Design 📚</h1>
 </div>
 
->[!Importnat]
+>[!Important]
 >Rule
 >1. 장별로 진행 한다.
 >2. 전체 내용을 전부 적지 않는다. (정리한 틀에 갖혀서 볼 가능성이 있음 / 다시 안볼 가능성이 높음)
