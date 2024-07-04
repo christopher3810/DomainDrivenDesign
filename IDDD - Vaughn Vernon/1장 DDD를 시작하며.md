@@ -59,3 +59,89 @@
 
 ERP 개발이 예시가 될 수 있는데, 비즈니스 전반 기능을 ERP 에 Fit 하게 맞춰서 변경하곤 하는 경향이 있다.
 
+### DDD가 해줄 수 있는 일
+---
+
+1. DDD는 비즈니스에 가장 쓸모 있는 모델을 제공한다. \
+   UL은 모든 팀의 동의에 의해 개발되며, 쓰이고, 모델에 바로 반영된다. \
+   절대로 도메인 전문가와 소프트웨어 개발자를 나누지 않는다. \
+   항상 우리여야 한다.
+
+2. DDD는 비즈니스의 전략적 이니셔티브를 다룬다. \
+   전략적 설계의 기술적 측면은 시스템과 비즈니스 문제를 명확하게 결합하는 데 목표가 있으며, 이는 각 비즈니스 단계의 서비스를 보호한다. \
+   이는 서비스 지향 아키텍쳐 SOA, 비즈니스 주도 아키텍처 를 어떻게 성공시킬지의 측면에서 의미 있는 동기를 부여한다.
+
+### 도메인 복잡성과 씨름하기
+---
+
+DDD 는 비즈니스에서 가장 중요한 영역에서부터 사용해나가야 한다.
+
+가장 가치 있고 중요해서 가장 큰 배당금을 돌려받을 수 있다는 약속이 있는 곳에 투자 할 것이다.
+
+핵심 도메인이라 부르는 이유다.
+
+핵심 도메인과 그 다음으로 중요한 지원 서브도메인은 가장 큰 투자가 필요한 부분이다.
+
+그런 뒤에야 우리는 복잡성의 의미에 대해 논의할 수 있다.
+
+가능한 가장 단순하게 복잡한 도메인을 모델링 하라.
+
+### Ubiquitous language
+---
+
+어떻게 유비쿼터스 언어를 정확히 담아내야 할까?
+
+>[!important]
+>1. 물리적이고 개념적인 도메인 그림을 그리고 이름과 행동을 붙여보라.
+>2. 간단한 정의로 구성된 용어집을 만들라. \
+>   잘 쓰일것 같은 용어든 그렇지 않은 용어든, 대체 용어를 나열하고 그 이유를 밝혀라. \
+>   정의를 추가할 땐 도메인의 언어를 사용해야만 하기 때문에 재사용 가능한 구문을 만들어야만 한다.
+>3. 만들어진 구문을 나머지 팀원들과 돌려보며 리뷰하자.
+
+```java
+public interface Customer {
+	public void changePersonalName(
+		String firstName, String lastName);
+	public void postalAddress(PostalAddress postaladdress)
+	public void relocateTo(PostalAddress postaladdress)
+	public void chageHomeTelephone(Telephone telephone);
+	public void disconnectHomeTelephone();
+	public void changeMobileTelephone()
+	public void disconnectMobileTelephone();
+	public void primaryEmailAddress(EmailAddress emailAddress)
+	public void secondaryEmailAddress(EmailAddress emailAddress)
+}
+```
+
+Cusotmer가 지원해야할 다양한 비즈니스 목표를 명시적으로 반영헀으며, 지속적인 향상을 통해 개선 가능하다.
+
+각 애플리케이션 서비스 메서드는 하나의 유스케이스 플로우나 사용자 스토리를 처리하도록 수정된다.
+
+```java
+@Transactional
+public void changeCustomerPersonalName(){
+
+// repository find
+
+// null check
+
+customer.changePersonalName(customerFistname, customerLastName)
+
+}
+```
+
+유저 인터페이스 역시 더 좁은 사용자 목표를 반영해야 한다는 점을 의미한다.
+
+>[!important]
+>유비쿼터스 언어는 소프트웨어 모델 자체에 특정 핵심 비즈니스 도메인의 개념과 용어를 포착하는데 사용되는 팀의 패턴이다. \
+>소프트웨어 모델은 잘 짜여진 팀에 의해 공식적으로 만들어지고 쓰여지는 명사, 형용사, 동사 그리고 풍부한 표현들을 통합한다.
+
+>[!important]
+>바운디드 컨텍스트당 하나의 유비쿼터스 언어가 있다. \
+>바운디드 컨텍스트는 우리가 처음 상상했던 것보다 상대적으로 더 작다. \
+>바운디드 컨텍스트는 격리된 비즈니스 도메인의 완전한 유비쿼터스 언어를 포착할 만큼 크다. \
+>유비쿼터스 언어는 바운디드 컨텍스트를 격리시키고 그 안에서 프로젝트의 개발 업무를 수행하는 팀 내부에서만 유비쿼터스하다. \
+>바운디드 컨텍스트를 밝혀내라, 그러므로서 당신은 도메인 모델 주변에 명시적인 경계를 그을 수 있다. \
+>바운디드 컨텍스트 내 격리된 도메인 모델에서 유비쿼터스 언어를 토론하고, 연구하고, 개념화하고, 개발하고, 사용하라. \
+>격리된 컨텍스트상에서 합의된 유비쿼터스 언어가 아닌 모든 개념을 거부하라.
+
