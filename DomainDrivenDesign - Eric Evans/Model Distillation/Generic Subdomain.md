@@ -167,7 +167,8 @@ xp에서는 end to end 시스템을 구축하고 그것을 즉시 작동하게 �
 
 이는 Core Domain이 종종 예상외로 쉽지 않고,Core Domain 없이는 프로젝트가 성공할수 없기 때문이다.
 
->[!important] (α)
+>[!important] 
+> (α)
 >Generic SubDomain 디스틸레이션 패턴은 위와 같은 서브도메인을 추출해 나가면서 CoreDomain의 정수를 추출하는 방법을 보여준다.\
 >SubDomain을 추출하기 위해 모델과 코드를 어떻게 변경했었는지 논의를 해보았다.
 
