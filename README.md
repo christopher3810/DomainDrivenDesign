@@ -5,8 +5,8 @@
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/christopher3810/DomainDrivenDesign?style=for-the-badge) ![GitHub last commit](https://img.shields.io/github/last-commit/christopher3810/DomainDrivenDesign?style=for-the-badge)
 
->The heart of software is its ability to solve domain related problems for the user
->- Eric Evans in Domain Driven Design
+>The heart of software is its ability to solve domain related problems for the user\
+>-Eric Evans in Domain Driven Design-
 
 > DDD Deep Dive
 
