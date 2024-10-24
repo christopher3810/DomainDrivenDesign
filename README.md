@@ -1,11 +1,12 @@
 <div align="center">
-    <img src="https://github.com/christopher3810/DomainDrivenDesign/assets/61622657/4b8e102e-0ef3-4601-b157-19215e87af82" alt="TIL" width="200" height="200">
+    <img src="https://github.com/user-attachments/assets/ad22223e-f020-4772-a5de-c959207f0079" alt="TIL" width="200" height="200">
     <h1>Domain Driven Design 📚✨</h1>
 </div>
 
-
-
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/christopher3810/DomainDrivenDesign?style=for-the-badge) ![GitHub last commit](https://img.shields.io/github/last-commit/christopher3810/DomainDrivenDesign?style=for-the-badge)
+
+>The heart of software is its ability to solve domain related problems for the user
+>- Eric Evans in Domain Driven Design
 
 > DDD Deep Dive
 
